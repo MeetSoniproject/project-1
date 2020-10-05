@@ -1,0 +1,423 @@
+{% load static %}
+<!DOCTYPEhtml>
+<html>
+    <head>
+    <title>Sense of Touch| Home</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'style.css' %}" >
+    
+    </head>
+    <body>
+        <!--Header Menu-->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">Sense of Touch</a>
+                    <div class="navbar-header  navbar-light ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav  justify-content-end">
+                        <li class="nav-item active">
+                            <a class="nav-link mr-sm-2" href="{% url 'index' %}" >Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  mr-sm-2" href="{% url 'contact' %}">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  mr-sm-2" href="{% url 'gallery' %}" >Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  mr-sm-2" href="{% url 'about' %}">About Us</a>
+                        </li>
+                        </ul>
+                    </div>
+            </nav>
+
+            <div id="carouselExampleCaptions"class="carousel slide carousel-fade" data-ride="carousel">
+               
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="{% static 'image/12.jpg' %}" class="d-block w-100" alt="...">
+                    <div class=" carousel-caption d-none d-md-block d-sm-block">
+                        <h5 class=" animate__animated animate__fadeInLeft animate__delay-1s ">Sense of Touch</h5>
+                        <p class="p1">Day Spa and Boutique</p>
+                    </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </header>
+        <!--Header Menu End-->
+        <!--Our Service-->
+        <div class="col-lg-6 offset-lg-3 col-12 text-center" style="margin-top: 5%;">
+            <div class="section-title">
+                <h2 class="services">Our Services</h2>
+                
+                    <hr>
+                    </hr>
+            </div>
+        </div>
+        <div align="center">
+            <div class="container col-lg-4 col-md-6 mt-lg-4 footer-top">
+            <img src="{% static 'image/F1.png' %}" alt="img" class="image ">                   
+                <div class="overlay overlayFade">
+                <a class="text" href="#item-1"> Facials treatment</a> 
+                </div>
+            </div>
+            <div class="container col-lg-4 col-md-6 mt-lg-4 ">
+            <img src="{% static 'image/F3.png' %}" alt="img" class="image">                    
+                <div class="overlay overlayFade">
+                    <a class="text" href="#item-2">Massages with sauna</a> 
+                </div>
+            </div>
+            <div class="container col-lg-3 col-md-6mt-lg-4 ">
+            <img src="{% static 'image/F2.png' %}" alt="img" class="image">                    
+                <div class="overlay overlayFade">
+                    <a class="text" href="#item-3">Body treatments with sauna</a>
+                        
+                </div>
+            </div>
+        </div>
+        <!--Our service End-->
+        <div class="col-lg-6 offset-lg-3 col-12 text-center" style="margin-top: 2%;">
+            <div class="section-title">
+                <h2 class="services">Price List</h2>
+                    <hr>
+                    </hr>
+            </div>
+        </div>
+        <div class="vc_row wpb_row vc_row-fluid eltd-section vc_custom_1477320860698 eltd-content-aligment-left eltd-grid-section" style="">
+            <div class="clearfix eltd-section-inner">
+            <div class="eltd-section-inner-margin clearfix">
+            <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6">
+            <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+            <div class="eltd-price-list " style=" margin: 2%;  ">
+            <div class="eltd-price-list-holder" >
+            <h2 class="eltd-price-list-title-area-1" id="item-1">Facials treatment</h2>
+            <p id="sub">Facials</p>
+            <div class="eltd-price-list-item eltd-trending-item">
+            <div class="eltd-price-list-item-inner ">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area">
+            White and bright facials
+            </span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$70</span>
+            </h5>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="eltd-price-list-item ">
+            <div class="eltd-price-list-item-inner">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area" >
+            Anti ageing facial </span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$70</span>
+            </h5>
+            </div>
+            </div>
+            </div>
+            </div><div class="eltd-price-list-item eltd-trending-item">
+            <div class="eltd-price-list-item-inner">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area" >
+            Youth.com facial
+            </span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$60</span>
+            </h5>
+            </div>
+            </div>
+            </div>
+            </div><div class="eltd-price-list-item ">
+            <div class="eltd-price-list-item-inner">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area" >
+            Anti stress facial</span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$60</span>
+            </h5>
+            </div>
+            </div>
+            </div>
+            </div><div class="eltd-price-list-item eltd-trending-item">
+            <div class="eltd-price-list-item-inner">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area" >
+            The cure facial 
+            </span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$60</span>
+            </h5>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div></div></div></div></div>
+
+
+        <div class="vc_row wpb_row vc_row-fluid eltd-section vc_custom_1477320860698 eltd-content-aligment-left eltd-grid-section" style="">
+            <div class="clearfix eltd-section-inner">
+            <div class="eltd-section-inner-margin clearfix">
+            <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6">
+            <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+            <div class="eltd-price-list " style="background-color: #ebebeb !important; margin: 2%;  width: 66%; margin: auto;">
+            <div class="eltd-price-list-holder" >
+            <h2 class="eltd-price-list-title-area-2" id="item-2">Massages with sauna</h2>
+            <p id="sub1"></p>
+            <div class="eltd-price-list-item1 eltd-trending-item">
+            <div class="eltd-price-list-item-inner ">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area">
+            Jetlag cure massage
+            </span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$60</span>
+            </h5>
+            </div>
+            </div>
+            <p class="eltd-price-list-desc">60min</p>
+            </div>
+            </div>
+            <div class="eltd-price-list-item1 ">
+            <div class="eltd-price-list-item-inner">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area" >
+            Thai hot stem massage </span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$60</span>
+            </h5>
+            </div>
+            </div>
+            <p class="eltd-price-list-desc">60min</p>
+            </div>
+            </div><div class="eltd-price-list-item1 eltd-trending-item">
+            <div class="eltd-price-list-item-inner">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area" >
+            Ultimate aroma therapy
+            </span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$60</span>
+            </h5>
+            </div>
+            </div>
+            <p class="eltd-price-list-desc">60min</p>
+            </div>
+            </div><div class="eltd-price-list-item1 ">
+            <div class="eltd-price-list-item-inner">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area" >
+            Signature massage</span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$70</span>
+            </h5>
+            </div>
+            </div>
+            <p class="eltd-price-list-desc">60min</p>
+            </div>
+            </div><div class="eltd-price-list-item1 eltd-trending-item">
+            <div class="eltd-price-list-item-inner">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area" >
+            Mother to be
+            </span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$50</span>
+            </h5>
+            </div>
+            </div>
+            <p class="eltd-price-list-desc">60min</p>
+            </div>
+            </div>
+        </div></div></div></div></div>
+
+
+        <div class="   eltd-section vc_custom_1477320860698 eltd-content-aligment-left eltd-grid-section" style="">
+            <div class="clearfix eltd-section-inner">
+            <div class="eltd-section-inner-margin clearfix">
+            <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6">
+            <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+            <div class="eltd-price-list " style=" margin: 2%;  ">
+            <div class="eltd-price-list-holder" >
+            <h2 class="eltd-price-list-title-area-1" id="item-3">Body treatments with sauna</h2>
+            <p id="sub">Sauna</p>
+            <div class="eltd-price-list-item eltd-trending-item">
+            <div class="eltd-price-list-item-inner ">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area">
+            Seasonal body treatment
+            </span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$80</span>
+            </h5>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="eltd-price-list-item ">
+            <div class="eltd-price-list-item-inner">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area" >
+            Relaxation treatment </span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$70</span>
+            </h5>
+            </div>
+            </div>
+            </div>
+            </div><div class="eltd-price-list-item eltd-trending-item">
+            <div class="eltd-price-list-item-inner">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area" >
+            Body polishing
+            </span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$90</span>
+            </h5>
+            </div>
+            </div>
+            </div>
+            </div><div class="eltd-price-list-item ">
+            <div class="eltd-price-list-item-inner">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area" >
+            Detoxifying body wrap. From</span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$70</span>
+            </h5>
+            </div>
+            </div>
+            </div>
+            </div><div class="eltd-price-list-item eltd-trending-item">
+            <div class="eltd-price-list-item-inner">
+            <div class="eltd-price-list-title-price-holder clearfix">
+            <h4 class="eltd-price-list-title">
+            <span class="eltd-price-list-title-area" >
+            Purifying back treatment 
+            </span>
+            </h4>
+            <div class="eltd-price-list-price-holder">
+            <h5 class="eltd-price-list-price">
+            <span class="eltd-price-list-currency eltd-price-list-number">$60</span>
+            </h5>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div></div></div></div></div>
+
+        <!--Message-->
+        <h6 class="message text-center"> LADIES ONLY & BY APPOINTMENT</h6>
+
+        <!--Footer-->
+        <footer class="footer-content">
+        <div class="layer footer">
+            <div class="container-fluid">
+                <div class="row footer-top-inner-w3ls">
+                    <div class="col-lg-4 col-md-6 footer-top ">
+                        <h2>
+                            <a href="{% url 'index' %}">Sense of Touch</a>
+                        </h2>
+                        <p class="my-3">Health is a relation between you and your body.<p>
+                        “Give your body a little love, it deserves it.”
+                       </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+                        <div class="footer-w3pvt">
+                            <h3 class="mb-3 w3pvt_title">Opening Hours</h3>
+                            <hr>
+                            <ul class="list-info-w3pvt last-w3ls-contact mt-lg-4">
+                                <li>
+                                    <p> TUESDAY TO SUNDAY 11 AM TO 6 PM</p>
+
+                                </li>
+                                <li class="my-2">
+                                    <p>MONDAY CLOSED</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-lg-0 mt-5">
+                        <div class="footer-w3pvt">
+                            <h3 class="mb-3 w3pvt_title">Contact Us</h3>
+                            <hr>
+                            
+                            <div class="last-w3ls-contact my-2">
+                                <p> 905-455-5695</p>
+                            </div>
+                            <div class="last-w3ls-contact">
+                                <p>13 Waterwide Crest,
+                                    <br> Brampton, ON L6X 5K9.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="copy-right-grids text-li text-center my-sm-5 my-4">Copyright © 2018 Sense of Touch - All Rights Reserved.
+                </p>
+            </div>
+            <!-- //footer bottom -->
+        </div>
+    </footer>
+    <!--Footer End-->
+ </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</html>

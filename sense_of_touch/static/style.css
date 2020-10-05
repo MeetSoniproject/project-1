@@ -1,0 +1,312 @@
+
+.navbar-brand{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+   
+}
+.navbar-toggler{
+    color:white;
+}
+.nav-link{
+    color:white;
+    font-family: 'Raleway', sans-serif;
+  
+    border-bottom: 1px solid transparent;
+    
+}
+
+.navbar{
+    width: 100%;
+    background-color:#d5336acc;
+      
+}
+
+.carousel-caption{
+    text-align-last: start;
+   
+}
+
+.carousel-caption h5{
+    font-size: 50px;
+}
+
+.carousel-control-prev{
+    background-image: none;
+}
+
+.carousel-control-next{
+    background-image: none;
+}
+
+.p1{
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid transparent;
+}
+
+.animate__animated{
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.container{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-top: 2%;
+    margin: 3%;
+}
+.image{
+    display: block;
+    width: 200px;
+    height: 200px;
+    
+}
+.overlay{
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background-color: white;
+    
+}
+.container:hover .overlay{
+    opacity: 1;
+    
+}
+
+.text{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+.overlayFade{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 7%;
+    background-color: #faebd7b3;
+    border-radius: 100%;
+}
+
+
+@media (max-width: 1080px){
+	.image{
+		flex: 100%;
+		max-width: 960px;
+	}
+}
+
+@media (max-width: 400px){
+	.image .overlay .text{
+		font-size: 16px;
+	}
+}
+
+.section-title hr {
+    width: 30px;
+    height: 30px;
+    background: url(image/i3.png) no-repeat;
+    background-size: cover;
+    border: none;
+    position: relative;
+    margin: 0 auto;
+}
+  
+.section-title hr:before {
+    content: '';
+    width: 70px;
+    height: 1px;
+    position: absolute;
+    right: -80px;
+    top: 50%;
+    background: #ec5598;
+}
+
+.section-title hr:after {
+    content: '';
+    width: 70px;
+    height: 1px;
+    position: absolute;
+    left: -80px;
+    top: 50%;
+    background: #ec5598;
+}
+
+.services{
+    font-family: 'Dancing Script', cursive;
+    font-size: 34px;
+}
+
+.message{
+    color: rgb(119, 119, 119);
+    font-style: italic;
+    text-decoration: underline;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 2%;
+}
+
+.google{
+    position: relative;
+    padding-bottom: 20%;
+    height: 0;
+    overflow: hidden;
+}
+.google iframe{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100% !important;
+    height: 100% !important;
+   
+}
+.footer-content h2 a {
+    
+    font-family: 'Dancing Script', cursive;   
+    font-weight: 500;
+    color:#ec5598;
+    
+}
+
+.footer-content {
+    background: url(image/footer.jpg) center no-repeat;  
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    min-height: 19em;
+}
+.layer.footer {
+    min-height: 19em;
+    background: rgba(0, 0, 0, 0.82);
+}
+
+hr{
+    border-top: 1px solid rgb(255 255 255 / 48%);
+}
+
+
+#item-2{
+    font-family: 'Raleway', sans-serif;
+    color: #d5336acc;
+}
+.eltd-price-list-title-area-1{
+    font-family: 'Raleway', sans-serif;
+    width: 68%;
+    margin: auto;
+    color: #d5336acc;
+    
+}
+.eltd-price-list-number{
+    font-family: 'Raleway', sans-serif;
+}
+
+#sub{
+    font-style: italic;
+    width: 68%;
+    margin: auto;
+}
+
+
+.eltd-price-list .eltd-price-list-title {
+    margin: 0;
+    color: #000;
+    width: 87%;
+    float: left;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.eltd-price-list .eltd-price-list-title:before {
+    background: #ddd;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    
+
+}
+
+.eltd-price-list .eltd-price-list-item {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 68%;
+    margin: auto;
+    margin-bottom: 37px;
+}
+
+.eltd-price-list .eltd-price-list-price-holder {
+    width: 25%;
+
+}
+.eltd-price-list .eltd-price-list-price-holder {
+    float: right;
+    width: 13%;
+    text-align: right;
+}
+
+
+.title{
+    font-size: larger;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.btn-primary{
+    background-color:#d5336acc;
+    border-color: #d5336acc;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 500ms;
+    border: 1px solid  #d5336acc;
+
+}
+
+
+.contact-information{
+
+    background-color:#d5336acc ;
+    padding: 30px 50px;
+    border-radius: 3px;
+    color: white;
+}
+.c1{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.form-group{
+    font-family: 'Raleway', sans-serif;
+}
+
+#carouselExampleIndicators{
+    width: 60%;
+    height: 60%;
+    margin-bottom: 10%;
+    margin-left: 21%;
+    
+}
+
+.eltd-price-list-title-area{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+::-webkit-input-placeholder{
+    color: grey;
+    font-size: small;
+}
+

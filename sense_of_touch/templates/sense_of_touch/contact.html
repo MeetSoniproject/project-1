@@ -1,0 +1,155 @@
+{% load static %}
+<!DOCTYPEhtml>
+<html>
+    <head>
+    <title>Sense of Touch| Contact Us</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'style.css' %}" >
+    
+    </head>
+    <body>
+        <!--Header Menu-->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">Sense of Touch</a>
+                    <div class="navbar-header  navbar-light ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav  justify-content-end">
+                        <li class="nav-item active">
+                            <a class="nav-link mr-sm-2" href="{% url 'index' %}" >Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  mr-sm-2" href="{% url 'contact' %}">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  mr-sm-2" href="{% url 'gallery' %}" >Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  mr-sm-2" href="{% url 'about' %}">About Us</a>
+                        </li>
+                        </ul>
+                    </div>
+            </nav>
+        </header>
+        <!--Header Menu End-->
+        <!--Contact text-->
+        <div class="col-lg-6 offset-lg-3 col-12 text-center" style="margin-top: 5%; margin-bottom: 2%;">
+            <div class="section-title">
+                <h2 class="services">Contact Us</h2>
+                    <hr>
+                    </hr>
+            </div>
+        </div>
+        {% if message %}
+            <h4 class="message-1 text-center" style="font-family: 'Raleway', sans-serif; margin-bottom:40px;">{{ message }}</h4>
+        {% endif %}
+       
+        <div class="row"style=" margin-bottom: 2%;" >
+            <div class="col-9 offset-lg-1 col-md-4 ">
+                <div class="contact-information">
+                    <h5>Address</h5>
+                    <p class="c1">Sense of Touch<br>13 Waterwide Crest, Brampton, ON L6X 5K9</p>
+
+                    <h5>Mobile</h5>
+                    <p class="c1">905-455-5695</p>
+
+                    <h5>Hours</h5>
+                    <p class="c1">TUESDAY TO SUNDAY 11 AM TO 6 PM<br>MONDAY CLOSED</p>
+                </div>
+            </div>
+            <div class="col-12 offset-lg- col-md-6" id="form">
+                <div class="title">
+                Get In Touch
+                <div class="line" style=" width: 70px; height: 4px; background-color: #d5336acc;"></div>
+                </div>
+                <form action="{% url 'contact' %}" method="post">
+                {% csrf_token %}
+                    <div class="row">
+                        <div class="form-group col-lg-6">
+                            <label for="exampleFormControlInput1">Name*</label>
+                            <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Name" required>
+                        </div> 
+                        <div class="form-group col-lg-6">
+                            <label for="exampleFormControlInput1">Email addres*</label>
+                            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                        </div>                   
+                        <div class="form-group col-12">
+                            <label for="exampleFormControlTextarea1">Message*</label>
+                            <textarea class="form-control"  name="message" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-group col-md-4">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!--Google Map-->
+        <div class="google">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6025.872790694688!2d-79.82337718273747!3d43.66610441360388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b149a07415fcf%3A0x3db3024cc3dc6eeb!2sSense%20of%20Touch!5e0!3m2!1sen!2sin!4v1601647427288!5m2!1sen!2sin"  width="1519px"; height="302px"; frameborder="0" style="border:0; " allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <!--Footer-->
+        <footer class="footer-content">
+        <div class="layer footer">
+            <div class="container-fluid">
+                <div class="row footer-top-inner-w3ls">
+                    <div class="col-lg-4 col-md-6 footer-top ">
+                        <h2>
+                            <a href="{% url 'index' %}">Sense of Touch</a>
+                        </h2>
+                       <p class="my-3">Health is a relation between you and your body.<p>
+                        “Give your body a little love, it deserves it.”
+                       </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+                        <div class="footer-w3pvt">
+                            <h3 class="mb-3 w3pvt_title">Opening Hours</h3>
+                            <hr>
+                            <ul class="list-info-w3pvt last-w3ls-contact mt-lg-4">
+                                <li>
+                                    <p> TUESDAY TO SUNDAY 11 AM TO 6 PM</p>
+
+                                </li>
+                                <li class="my-2">
+                                    <p>MONDAY CLOSED</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-lg-0 mt-5">
+                        <div class="footer-w3pvt">
+                            <h3 class="mb-3 w3pvt_title">Contact Us</h3>
+                            <hr>
+                            
+                            <div class="last-w3ls-contact my-2">
+                                <p> 905-455-5695</p>
+                            </div>
+                            <div class="last-w3ls-contact">
+                                <p>13 Waterwide Crest,
+                                    <br> Brampton, ON L6X 5K9.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="copy-right-grids text-li text-center my-sm-5 my-4">Copyright © 2018 Sense of Touch - All Rights Reserved.
+                </p>
+            </div>
+            <!-- //footer bottom -->
+        </div>
+    </footer>
+    <!--Footer End-->
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</html>
